@@ -1,0 +1,31 @@
+h2{color:blue;
+background-color: bisque;
+}
+.title{
+    color:aliceblue;
+    background-color: blueviolet;
+}
+#paragraph1{
+    background-color: aquamarine;
+    color:black;
+}
+#paragraph2{
+    color:black;
+    background-color:azure;
+}
+.container{
+    width: 500px;
+}
+a{
+    text-decoration: dashed;
+}
+a:hover{
+    font-size: larger;
+    color: chartreuse;
+}
+a:visited{
+    color: rgb(71, 61, 46);
+}
+.picture{
+    width: 300px;
+}
