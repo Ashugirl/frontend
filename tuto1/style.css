@@ -1,3 +1,11 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    /* background-color:burlywood; */
+    background-image: url(https://www.campusfrance.org/sites/default/files/styles/desktop_visuel_principal_page/public/medias/images/2022-02/Ocean.jpg?itok=I5_gsLrA);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 h2{color:blue;
 background-color: bisque;
 }
@@ -12,6 +20,11 @@ background-color: bisque;
 #paragraph2{
     color:black;
     background-color:azure;
+    border-color: aqua;
+    border-width: 10px;
+    border-style: ridge;
+    padding: 10px;
+    margin: 20p;
 }
 .container{
     width: 500px;
@@ -28,4 +41,19 @@ a:visited{
 }
 .picture{
     width: 300px;
+}
+button{
+    height: 50px;
+    width: 150px;
+    background-color:mistyrose;
+    color: blueviolet;
+    font-size: x-large;
+    border-radius: 50%;
+    border:none;
+}
+button:hover{
+    background-color: blue;
+    color: antiquewhite;
+    cursor:zoom-in;
+border: 3px dashed cyan;
 }
