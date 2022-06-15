@@ -10,13 +10,13 @@ body{
 }
 
 .navbar{
-    background-color: mediumaquamarine;
-    position: fixed;
+    background-color:cornflowerblue;
+    position:relative;
     width: 100%;
     
 }
 #nav{
-    display: flex;
+    display:flex;
     justify-content:center;
     list-style: none;
     font-size: 30px;
@@ -66,37 +66,37 @@ body{
 
 #box1{
     background-color:firebrick;
-    transform: matrix(2, 4, 2, 3, 2, 2);
+   /* transform:matrix3d(0,0,0);*/
 
 }
 
 #box2{
     background-color:cornflowerblue;
-    position: absolute;
+   /* position: absolute;
     top: 0;
     left: 20px;
-    transform: translateX(140px);
+    transform: translateX(20px);*/
 }
 
 #box3 {
     background-color: black;
-    position: absolute;
+    /*position: absolute;
     top: 0;
     left: 40px;
-    transform: skew(20deg);
+    transform: skew(20deg);*/
 }
 
 #box4{
     background-color:gold;
-    position: absolute;
+   /* position: absolute;
     top: 0;
     left: 60px;
-    transform: scaleY(20%);
+    transform: scaleX(40%);*/
 }
 
 #box5{
     background-color:forestgreen;
-transform: rotate(45deg);
+/*transform: rotate(45deg);*/
 }
 
 
