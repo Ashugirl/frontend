@@ -51,6 +51,17 @@ else if(10 < result <20 ){
 //ternary operator (if result < 5 = true then first choice, else second choice)
 result < 5 ? console.log("wo0t"): console.log("boop!")
 
-result = 12;
+result = 5;
 result = result > 5 ? result > 10? "result is greater than 10" : "result is smaller than 10" : "result is smaller than 5"
 console.log(result)
+
+if(result < 10 && result > 5){
+    console.log("Result is smaller than 5 and smaller than 10")
+} else{
+    console.log(result)
+}
+
+//oefening
+let age = 11;
+age = age < 16? "You are too young to drink." : "What would you like to order?"
+console.log(age);
