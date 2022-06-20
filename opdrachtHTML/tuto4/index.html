@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    <style>
+    #file-upload-button{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <form method="get">
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+        <br>
+        <label for="email">Email</label>
+        <input type="email" id="email">
+        <br>
+        <label for="password">password</label>
+        <input type="password" id="password">
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    <br>
+
+    <fieldset>
+        `<legend>USER LOGIN>
+
+        </legend>
+        <form>
+            <label for="username">UserName</label>
+            <input type="text" minlength="3" required>
+            <br>
+            <label for="password">Password</label>
+            <input type="password" id="password" required>
+            <br>
+            <label for="birthdate">Birth Date</label>
+            <input type="date" id="birthdate">
+            <br>
+            <input type="submit" value="Submit">
+            <button type="reset">Reset</button>
+        </form>
+    </fieldset>
+    <form>
+        <label for="">Inschrijven nieuwsbrief</label>
+        <input type="checkbox" name="" id="">
+        <label for="">Inschrijven promotiemails</label>
+        <input type="checkbox" checked>
+        <br>
+        <label for="">Volvo</label>
+        <input multiple type="radio" name="car">
+        <label for="">Audi</label>
+        <input multiple type="radio" name="car">
+        <label for="">Porsche</label>
+        <input multiple type="radio" name="car">
+        <br>
+        <label for="Selecteer je auto"></label>
+        <select name="" id="">
+            <option value="Volvo">Volvo</option>
+            <option value="Audi">Audi</option>
+            <option value="Porsche">Porsche</option>
+        </select>
+        <br>
+        <label for="range">RANGE</label>
+        <input type="range" min="0" max="50">
+        <br>
+        <label for="">Number</label>
+        <input type="number" min="5" max="10">
+        <br>
+        <input type="file" name="" id="">
+    </form>
+</body>
+</html>
