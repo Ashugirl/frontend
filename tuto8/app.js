@@ -135,8 +135,8 @@ console.log(geslaagd);
 
 geslaagd.map((student)=>{
     document.querySelector("#geslaagd").innerHTML += `<tr>
-    <td>$(student.name)</td>
-    <td>$(student.punten)</td>
+    <td>${student.naam}</td>
+    <td>${student.punten}</td>
     </tr>`
 })
 
@@ -148,8 +148,8 @@ console.log(nietGeslaagd);
 
 nietGeslaagd.map((student)=>{
     document.querySelector("#nietGeslaagd").innerHTML += `<tr>
-    <td>$(student.name)</td>
-    <td>$(student.punten)</td>
+    <td>${student.naam}</td>
+    <td>${student.punten}</td>
     </tr>`
 })
 
@@ -165,11 +165,13 @@ function bereken(){
     uitkomst.innerHTML = "De uitkomst is " + som + "."
 }
 
+
 let counter = document.getElementById("counter");
 let optellen = document.getElementById("optellen");
 let aftrekken = document.getElementById("aftrekken");
 let reset = document.getElementById("reset");
 let count = 0;
+
 optellen.addEventListener("click", function(){
     count++
    counter.innerHTML = count;
