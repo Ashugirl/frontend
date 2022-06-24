@@ -49,11 +49,46 @@ let blurb = document.getElementById("blurb");
 let book = document.getElementById("book");
 let bookEnter = document.getElementById("bookEnter");
 
+let bookList = []
+
 bookEnter.addEventListener("click", function(){
+
+    let obj = {
+        title: title.value, 
+        author: author.value, 
+        blurb: blurb.value
+    }
+    bookList.push(obj)
+    console.log(bookList)
+
+    localStorage.setItem("book", JSON.stringify(bookList))
    book.innerHTML += `<tr>
    <td>${title.value}</td>
    <td>${author.value}</td>
    <td>${blurb.value}</td>
-   <td><i class="fa-solid fa-trash-can"></i></td>
+   <td><i class="fa-solid fa-trash-can" onclick="removeRow(this)"></i></td>
    </tr>`
+    title.value = "";
+    author.value="";
+    blurb.value="";
+    
+})
+
+function removeRow(e){
+    e.parentElement.parentElement.remove()
+
+}
+
+window.addEventListener("DOMContentLoaded", function(){
+    let storageBook = JSON.parse(localStorage.getItem("book"))
+    console.log(storageBook)
+    storageBook.map((boekje)=>{
+    book.innerHTML += `<tr>
+   <td>${boekje.title}</td>
+   <td>${boekje.author}</td>
+   <td>${boekje.blurb}</td>
+   <td><i class="fa-solid fa-trash-can" onclick="removeRow(this)"></i></td>
+   </tr>`
+    })
+
 })

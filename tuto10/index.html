@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <h1>ROCK PAPER SCISSORS</h1>
+    <form>
+        <label for="play">Choose rock, paper, or scissors:</label>
+        <select name="game" id="game">
+            <option value="rock">ROCK</option>
+            <option value="paper">PAPER</option>
+            <option value="scissor">SCISSORS</option>
+        </select>
+    </form>
+
+    <h3 id="computerChoice">The computer chose: </h3>
+    <button onclick="result()">Who won?</button>
+    <h3 id="winner">The winner is: </h3>
+    
+    <script src="app.js"></script>
+</body>
+</html>
