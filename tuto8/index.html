@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>tuto8 JS</title>
+</head>
+<body>
+    <h1 id="date"></h1>
+    <div class="container">
+        <p id="datum1"></p>
+        <p id="amPm"></p>
+
+    </div>
+    <h2>Geslaagd</h2>
+    <table id="geslaagd">
+        <thead>
+            <th>Student</th>
+            <th>Punten</th>
+        </thead>
+        <tbody>
+            <td id="name"></td>
+            <td id="punten"></td>
+        </tbody>
+    </table>
+
+    <h2>Niet Geslaagd</h2>
+    <table id="nietGeslaagd">
+        <thead>
+            <th>Student</th>
+            <th>Punten</th>
+        </thead>
+        <tbody>
+            <td id="name"></td>
+            <td id="punten"></td>
+        </tbody>
+    </table>
+    <hr>
+<!-- CLICK EVENTS -->
+    <form action="" method="get" onsubmit="event.preventDefault()"">
+        <input type="text" name = "name" id="name" placeholder="Please enter your name">
+        <input type="button" value="submit" 
+        onclick="document.getElementById('welcome').innerHTML= 'Welcome ' + document.getElementById('name').value">
+    </form>
+    <h2 id="welcome">Welcome stranger!</h2>
+
+
+    <hr>
+    <input type="number" name="num1" id="num1" placeholder="enter a number">
+    <input type="number" name="num2" id="num2" placeholder="enter a number">
+    <button onclick="bereken()">Bereken</button>
+    <h2 id="uitkomst"></h2>
+
+    <hr>
+
+    <h1>Counter</h1>
+    <h2 id="counter">0</h2>
+    <button id="optellen">+</button>
+    <button id="aftrekken">-</button>
+    <button id="reset">RESET</button>
+
+
+
+
+    <script src="app.js"></script>
+   
+</body>
+</html>

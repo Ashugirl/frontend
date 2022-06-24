@@ -1,4 +1,4 @@
-
+/*
 body{
     background-color: #a3cd9e;
     background-size: cover;
@@ -134,42 +134,46 @@ footer ul{
 footer h5{
     width: 40%;
     text-align: end;
+}*/
+body{
+    background-color: #529471;
 }
-/*#title{
+.navbar{
+    width: 100%;
+    background-color:#35635b;
+}
+.title{
+   
     color: #e5f1e3;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display:flex;
     align-items: center;
     justify-content: flex-start;
     width: 40%;
+    padding: 10px;
 
 }
-#navbar{
+.title #icon{
+    height: 30px;
+    width: 30px;
+    padding: 20px;
+}
+
+.nav{
     width: 60%;
-    color: #e5f1e3;
-    list-style: none;
-    font-size: 30px;
+
 }
-#nav{
+.nav ul{
     display: flex;
-    justify-content: right;
-    font-size: 25px;   
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 30px;
+    list-style: none;
 }
-#nav>li{
-    margin-right: 90px;
-    
-}
-#nav>li>a{
-    text-align:end;
-    text-decoration: none;
+.nav ul>li>a{
     color: #e5f1e3;
 }
-
-li{
-    list-style: none;
-    color: #35635b;
-}
-
 
 .container{
     width: 100%;
@@ -179,6 +183,9 @@ li{
 .sidebar{
     background-color: #529471;
     width: 40%;
+}
+.sidebar >li{
+    
 }
 
 button{
@@ -243,4 +250,4 @@ footer.container>li>a{
     text-align:end;
     text-decoration: none;
     color: #e5f1e3;
-}*/
+}
