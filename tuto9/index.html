@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>JS tutorial 9</title>
+</head>
+
+<body>
+    <!-- <h1>Mouse Events</h1>
+    <h2>Mouse enter & leave</h2>
+
+    <div class="mouseLeave" onmouseenter="mouseEnter()"" onmouseleave=" mouseLeave()">
+
+
+    </div>
+    <h2>Mouse move</h2>
+    <div class="mouseMove" onmousemove="mouseMove(event)">
+
+    </div>-->
+
+    <h2 id="mouseUp" onmousedown="mouseDown()" onmouseup="mouseUp()">Mouse up & down</h2>
+    <p id="popup">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore repellendus ipsam dicta, obcaecati
+        minima
+        doloremque nemo quibusdam possimus eum placeat harum ducimus rerum distinctio adipisci nisi at repellat quod
+        porro.</p>
+
+
+    <h2 id="mouseClick" onclick="show()" onclick="unshow()">Mouse click & release</h2>
+    <p id="popup2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore repellendus ipsam dicta, obcaecati
+        minima
+        doloremque nemo quibusdam possimus eum placeat harum ducimus rerum distinctio adipisci nisi at repellat quod
+        porro.</p>
+
+    <hr>
+
+    <h1>Book List</h1>
+    <form id="inputBook">
+        <input type="text" placeholder="title" id="title">
+        <br>
+        <input type="text" placeholder="author" id="author">
+        <br>
+        <textarea id="blurb" rows="10"></textarea>
+    </form>
+    <button id="bookEnter" type="submit">Add Book</button>
+
+    <br>
+
+    <table id="bookList">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Description</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody id="book">
+            <tr>
+                <td>1984</td>
+                <td>George Orwell</td>
+                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae provident vitae, commodi porro
+                    doloremque nesciunt reiciendis deleniti nobis quasi molestias ea culpa fugit eius ipsum et sequi
+                    blanditiis placeat explicabo.</td>
+                <td>
+                    <i class="fa-solid fa-trash-can"></i>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
