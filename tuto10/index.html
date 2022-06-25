@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Rock Paper Scissors</title>
 </head>
 <body>
     <h1>ROCK PAPER SCISSORS</h1>
+    <div class="container">
     <form>
         <label for="play">Choose rock, paper, or scissors:</label>
         <select name="game" id="game">
@@ -17,9 +19,9 @@
         </select>
     </form>
 
+    <button id="button" onclick="result()">Computer choice?</button>
     <h3 id="computerChoice">The computer chose: </h3>
-    <button onclick="result()">Computer choice?</button>
-    <h3 id="winner">The winner is: </h3>
+    <h3 id="winner">The winner is: </h3></div>
     
     <script src="app.js"></script>
 </body>

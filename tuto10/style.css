@@ -1,0 +1,31 @@
+body{
+    background-color: lightskyblue;
+}
+
+h1{
+    text-align: center;
+}
+.container{
+    padding: 10px;
+    margin: auto;
+    border: 3px solid darkolivegreen;
+    text-align: center;
+    width: 500px;
+    background-color: lime;
+}
+button{
+    margin: 20px;
+    border-style:outset;
+    border-width: 3px;
+    background-color: lightgreen;
+    color: black;
+    width: 100px;
+    height: 40px;
+
+
+}
+
+
+
+
+
