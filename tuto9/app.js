@@ -36,9 +36,11 @@ function show(){
     mouseClick = !mouseClick;
     console.log(mouseClick)
     if(mouseClick == true){
-        text.style.visibility = "visible"
+        text.style.display="block"
+        //text.style.visibility = "visible"
     }else{
-        text.style.visibility ="hidden"
+        text.style.display="none"
+        //text.style.visibility ="hidden"
     }
 }
 
@@ -75,7 +77,13 @@ bookEnter.addEventListener("click", function(){
 })
 
 function removeRow(e){
+    for(let x = 0; x< bookList.length; x++){
+        if(bookList[x].title == e.parentElement.parentElement.firstChild.nextElementSibling.innerText)
+        bookList.splice(x,1)
+    }
     e.parentElement.parentElement.remove()
+    console.log(e.parentElement.parentElement)
+    localStorage.setItem("book", JSON.stringify(bookList))
 
 }
 
