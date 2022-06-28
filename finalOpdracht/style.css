@@ -42,54 +42,121 @@ main{
 .content{
     background-color:#d3775d;
     margin: 30px;
-    width: 55%;
+    width: 40%;
+    color: #f5eb82;
     
 }
 h2{
-    color: #f5eb82;
+    
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.blog{
-    list-style: none;
-    display: flex;
-    flex-direction: column;  
-    align-items: center;
-    padding-inline-start: 0;
-    
+.collapsible{
+    background-color:#a75377;
+  color:#f5eb82;
+  height: 60px;
+  cursor: pointer;
+  padding: 18px;
+  margin: 8px;
+  width: 95%;
+  border-style: outset;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  outline: none;
+  font-size: 25px;
 }
-.blog>li{
-    background-color:#f5eb82;
-    height: 50px;
-    width: 90%;
-    color:#a75377;
-    font-size: 25px;
-    display: block;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 30px;
-    border-radius: 10px;
-    border: 3px solid #a75377
-    
 
+.collapsible:hover{
+    background-color: #dfb361;
+    color:#a75377;
 }
-#content2{
-    width: 60%;
+.entry{
+    padding: 0 18px;
+    text-align: center;
+    display: none;
+    overflow: hidden;
+    background-color:#dfb361;
+    color: #a75377;
+}
+
+
+.content2{
+    width: 55%;
     
+}
+.nameForm{
+    display: flex;
+    flex-direction: row;
 }
 #name{
     margin: 10px;
     height: 30px;
     width: 250px;
-    font-size: larger;
+    font-size: large;
+}
+
+#inputName{
+    font-size: 30px;
+}
+#nameSubmit{
+    margin: 10px;
+    height: 28px;
+    width: 100px;
+    font-size: large;
+    background-color:#d3775d;
+    color:#f5eb82;
 }
 #photo{
 
-    width: 90%;
+    width: 100%;
+    padding: 30px;
+    border-radius: 8%;
+}
+.contact{
+    width: 100%;
+   
+    display: flex;
+    
+}
+
+/* .icon{
+    height: 100px;
+    width: 100px;
+} */
+table, th, td{
+    background-color:#d3775d;
+    color:#f5eb82;
+    margin: 45px;
+    
+    
+  border:#d3775d solid 3px;
+    width: 50%%;
+    border-collapse: collapse; 
+    
+}
+th, td{
+    
+     border: 2px solid #f5eb82; 
+     padding: 10px; 
+     margin: 10px;
+      
+  }
+  th{
+      font-size: 25px;
+  }
+  
+  td a{
+      color: #f5eb82;
+  }
+.picture{
+    width: 55%;
+}
+#beePic{
+    width: 100%;
     padding: 30px;
     border-radius: 8%;
 }
@@ -101,5 +168,19 @@ footer{
     display: flex;
     justify-content: space-evenly;
     color: #f5eb82;
+
+}
+footer h5{
+    width: 40%;
+    text-align:start;
+
+}
+footer ul{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
 
 }

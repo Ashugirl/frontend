@@ -36,11 +36,11 @@ function show(){
     mouseClick = !mouseClick;
     console.log(mouseClick)
     if(mouseClick == true){
-        text.style.display="block"
-        //text.style.visibility = "visible"
+        //text.style.display="block"
+        text.style.visibility = "visible"
     }else{
-        text.style.display="none"
-        //text.style.visibility ="hidden"
+        //text.style.display="none"
+        text.style.visibility ="hidden"
     }
 }
 
