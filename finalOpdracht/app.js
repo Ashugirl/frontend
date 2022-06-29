@@ -28,3 +28,15 @@ nameSubmit.addEventListener("click", function(){
     
 
 })
+
+let block = document.getElementById("myDropdown");
+let block2 = document.getElementById("myDropdown2")
+
+function showBlock(){
+    block.classList.toggle("show");
+}
+function showBlock2(){
+    block2.classList.toggle("show");
+}
+  
+ 
