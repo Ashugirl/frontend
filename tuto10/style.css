@@ -1,5 +1,9 @@
 body{
-    background-color: lightskyblue;
+    background-color:azure;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin:100px
 }
 
 h1{
@@ -8,21 +12,37 @@ h1{
 .container{
     padding: 10px;
     margin: auto;
+  
     border: 3px solid darkolivegreen;
+    
     text-align: center;
+    
     width: 500px;
-    background-color: lime;
+    background-color:aquamarine;
 }
 button{
     margin: 20px;
     border-style:outset;
     border-width: 3px;
-    background-color: lightgreen;
+    background-color:azure;
     color: black;
     width: 100px;
     height: 40px;
 
 
+}
+#rock{
+    height: 40px;
+    width: 40px;
+}
+
+#paper{
+    height: 40px;
+    width: 40px;   
+}
+#scissors{
+    height: 40px;
+    width: 40px;
 }
 
 

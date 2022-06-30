@@ -16,7 +16,8 @@ body{
     padding: 5px;
 }
 .title #logo{
-    padding-right: 5px;
+    
+    margin: 5px;
 }
 .nav{
     width: 100%;
@@ -50,7 +51,7 @@ body{
     border:#b48f4a solid 2px;
 }
 .dropdown {
-    float: right;
+    float: right; 
     position: relative;
     display: inline-block;
   }
@@ -261,4 +262,8 @@ footer ul{
     justify-content: space-around;
     align-items: center;
 
+}
+footer ul>li>a{
+    color: #f5eb82;
+    text-decoration: none;
 }

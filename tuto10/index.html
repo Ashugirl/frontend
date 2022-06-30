@@ -5,20 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Rock Paper Scissors</title>
 </head>
 <body>
     <h1>ROCK PAPER SCISSORS</h1>
     <div class="container">
     <form>
-        <label for="play">Choose rock, paper, or scissors:</label>
+        <label for="play">Choose one:</label>
         <select name="game" id="game">
             <option value="rock">ROCK</option>
             <option value="paper">PAPER</option>
             <option value="scissors">SCISSORS</option>
         </select>
-    </form>
-
+    </form>     
     <button id="button" onclick="result()">Computer choice?</button>
     <h3 id="computerChoice">The computer chose: </h3>
     <h3 id="winner">The winner is: </h3></div>

@@ -19,24 +19,41 @@ for(var i = 0; i< collapsible.length; i++){
 
 let userName = document.getElementById("name");
 let nameSubmit = document.getElementById("nameSubmit");
-let inputName = document.getElementById("inputName")
+let inputName = document.getElementById("inputName");
+let nameForm = document.getElementsByClassName("nameForm");
+
 
 nameSubmit.addEventListener("click", function(){
     
+    nameSubmit.innerHTML= "Reset";
     inputName.innerHTML = "Welcome " + userName.value + "!";
     this.innerHTML.style.fontSize = 50;
     
+    } 
 
-})
+)
+function myFunction(){
+    document.getElementById("nameSubmit").reset();
+}
+
+// if(nameSubmit.innerHTML = "Reset"){
+// console.log(nameSubmit);
+//     nameSubmit.addEventListener("click", function(){
+//         nameSubmit.innerHTML = "Submit";
+//         nameForm.innerHTML = inputName>userName>"Please enter your name here.";
+
+//     })
+//     nameSubmit.addEventListener("click", function(){
+//         inputName.innerHTML = `<input id="name" type="text" placeholder="Please enter your name here" >`
+//     })
 
 let block = document.getElementById("myDropdown");
-let block2 = document.getElementById("myDropdown2")
+
 
 function showBlock(){
     block.classList.toggle("show");
 }
-function showBlock2(){
-    block2.classList.toggle("show");
-}
+
+
   
  
