@@ -17,24 +17,49 @@ for(var i = 0; i< collapsible.length; i++){
 
 
 
-let userName = document.getElementById("name");
-let nameSubmit = document.getElementById("nameSubmit");
+let userName = document.getElementById("userName");
+let nameSubmit = document.getElementById("nameSubmit"); 
 let inputName = document.getElementById("inputName");
-let nameForm = document.getElementsByClassName("nameForm");
+let nameForm = document.querySelector(".nameForm");
+let val = false;
 
+nameSubmit.addEventListener("click", (e)=>{
+    val=!val
+    if(!val){
+        
+nameForm.innerHTML=`<form>
+<input type = "text" placeholder = "Please enter your name here" id="userName">
+</form>`
+nameSubmit.innerHTML = "Submit"
 
-nameSubmit.addEventListener("click", function(){
+    } else{
+       
+        nameForm.innerHTML = `<h2> Welcome ${userName.value}</h2>`
+        nameSubmit.innerHTML = "Reset"
+        
+
+        
+        
+    }
+})
     
-    nameSubmit.innerHTML= "Reset";
-    inputName.innerHTML = "Welcome " + userName.value + "!";
-    this.innerHTML.style.fontSize = 50;
     
-    } 
+//     nameSubmit.innerHTML= "Reset";
+//    nameSubmit.innerHTML !="Reset"? `   <form id="inputName">
+//    <input id="name" type="text" placeholder="Please enter your name here" >
 
-)
-function myFunction(){
-    document.getElementById("nameSubmit").reset();
-}
+// </form>
+
+// <button id="nameSubmit" type="submit">Submit</button>`: inputName.innerHTML = "Welcome " + userName.value + "!" +
+// <button id="nameSubmit" type="submit">Submit</button>;
+//     this.innerHTML.style.fontSize = 50;
+    
+//     } 
+
+// )
+// function myFunction(){
+//     document.getElementById("nameSubmit").reset();
+// }
 
 // if(nameSubmit.innerHTML = "Reset"){
 // console.log(nameSubmit);

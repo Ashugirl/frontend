@@ -37,7 +37,9 @@ body{
     color: #f5eb82;
     text-decoration: none;
 }
-
+.nav ul>li>a:hover{
+    color: #dfb361;
+}
 .dropbtn{
     background-color: #a75377;
     color: #f5eb82;
@@ -147,7 +149,7 @@ h2{
     display: flex;
     flex-direction: row;
 }
-#name{
+#userName{
     margin: 10px;
     height: 30px;
     width: 250px;
